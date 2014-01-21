@@ -1142,7 +1142,7 @@ static void setup_tables(void)
     start_data_block = (start_data_sector + SECTORS_PER_BLOCK - 1) /
 	SECTORS_PER_BLOCK;
 
-    if (blocks < start_data_block + 32)	/* Arbitrary undersize filesystem! */
+    if (blocks < start_data_block + 1)	/* Arbitrary undersize filesystem! */
 	die("Too few blocks for viable filesystem");
 
     if (verbose) {
